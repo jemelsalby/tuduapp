@@ -5,10 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TudulistComponent } from './tudulist/tudulist.component';
 
 const routes:Routes=[
   {
-
+    path:"",component:TudulistComponent
   }
 ]
 
@@ -16,7 +17,8 @@ const routes:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    TudulistComponent
   ],
   imports: [
     BrowserModule,
